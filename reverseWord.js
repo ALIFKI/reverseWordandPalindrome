@@ -1,10 +1,10 @@
 function reverseWord(txt){
     //validasi inputan supaya tidak kosong
-    if (txt.length <= 1) {
+    if (txt.split(' ').length < 2) {
         //variable jika terjadi inputa error
         let message = {
             kode : '500',
-            msg  : 'Inputan tidak valid'
+            msg  : 'Inputan harus mengandung setidaknya 2 kata'
         }
         return message
     } else {
@@ -18,4 +18,4 @@ function reverseWord(txt){
     }
 }
 
-console.log(reverseWord('Saya Belajar Javascript'))
+console.log(reverseWord('Saya dan'))
