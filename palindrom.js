@@ -2,8 +2,9 @@ function checkPalindrom(parm1){
     if (parm1.length <= 1) {
         return 'Input tidak valid'
     } else {
-        var valid = parseInt(parm1)
-        if (valid) {
+        var regex = new RegExp(/\d+/)
+        var valid = Boolean(parm1.match(regex))
+        if (valid == true) {
             let message = {
                 kode : 'Failed',
                 msg  : 'Input tidak boleh mengandung angka' 
