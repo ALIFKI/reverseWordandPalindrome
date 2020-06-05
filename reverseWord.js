@@ -4,10 +4,15 @@ function reverseWord(txt){
             kode : '500',
             msg  : 'Inputan tidak valid'
         }
+
+        return message
     } else {
         var teks = txt.split(' ').reverse().join(' ');
-        return teks
+        let data = {
+            msg : teks
+        }
+        return data
     }
 }
 
-console.log(reverseWord('Saya Belajar JavaScript'))
+console.log(reverseWord(''))
