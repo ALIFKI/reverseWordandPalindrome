@@ -18,4 +18,4 @@ function reverseWord(txt){
     }
 }
 
-console.log(reverseWord(''))
+console.log(reverseWord('Saya Belajar Javascript'))
